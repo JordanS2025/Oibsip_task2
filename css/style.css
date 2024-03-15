@@ -10,7 +10,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 1000vh;
+    min-height: 250vh;
     background-image: url("../Images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,53 +27,18 @@ section {
     align-items: center; 
 }
 
-nav {
-    height: 80px;
-}
-
-nav h1 {
-    line-height: 80px;
-    font-size: 35px;
-    color: purple;
-}
-
-nav ul {
-    float: left;
-    line-height: 80px;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0px 5px;
-}
-
-nav ul li a {
-    color: royalblue;
-    text-decoration: dashed;
-    text-transform: capitalize;
-    border-radius: 5px;
-    padding: 7px 8px;
-}
-
-nav ul li a:hover {
-    background-color: rgb(135, 13, 159);
-    transition: 0.5s ease;
-}
 
 .article
 {
     width: 50%;
     margin: auto;
     text-align: center;
-    transform: translateY(10vh);
 }
 
 
  .article2, .skills, .education, .project {
     width: 50%;
     text-align: center;
-    transform: translateY(10vh);
     margin-top: 50px;
 }
 .skills
@@ -81,18 +46,9 @@ nav ul li a:hover {
     justify-content: space-between;
     display: flex;
 }
-.article h1
-{
-    font: size 40px;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 800;
-    margin-bottom: 250px;
-    color: aliceblue;
-    transform: translate(10vh);
-}
 
- .article2 h1, .skills h1, .experience h1, .education h1, .projects h1 {
+
+ .article h1, .article2 h1, .skills h1, .experience h1, .education h1, .projects h1 {
     font-size: 40px;
     color: white;
     letter-spacing: 1px;
@@ -100,11 +56,6 @@ nav ul li a:hover {
     margin-bottom: 25px;
 
     
-}
-
-.article2 h1, .skills h1, .experience h1, .education h1, .projects h1 {
-    color: aliceblue;
-    transform: translate(30vh);
 }
 
 .article p {
@@ -127,12 +78,15 @@ nav ul li a:hover {
     margin-top: 110px;
     transform: translate(5vh);
 }
+.education h1 
+{
+    text-align: left;
+}
 .education p 
 {
     font-size: 18px;
-    color: purple;
+    color: white;
     line-height: 1.5;
-    margin-bottom: 50px;
 }
 .education li
 {
@@ -140,17 +94,18 @@ nav ul li a:hover {
     color: white;
     line-height: 1.5;   
 }
+
 .projects p 
 {
     font-size: 18px;
-    color: purple;
+    color: white;
     line-height: 1.5;
     margin-bottom: 50px;
 }
 .projects li
 {
     font-size: 18px;
-    color: purple;
+    color: white;
     line-height: 1.5;   
 }
 
@@ -183,13 +138,9 @@ img {
 
 .experience {
     text-align: left;
-    color: purple;
+    color: white;
 }
 
-.experience h1
-{
-    margin-top:150px;
-}
 .experience-entry {
     margin-top: 20px; 
 }
