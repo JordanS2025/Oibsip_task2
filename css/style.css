@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Madimi+One&display=swap');
-  
-body 
-{
-  margin: 0;
-  padding: 0;
-  height: 100;
-  font-family: "Kode Mono", monospace;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Kode Mono", monospace;
 }
-section 
-{
+
+section {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     min-height: 100%;
-    max-height: 200%;
     background-image: url("../Images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,107 +21,185 @@ section
     z-index: -1;
 }
 
-.container
-{
+.container {
     width: 85%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
-nav 
-{
+
+nav {
     height: 80px;
 }
-nav h1
-{
-    float: right;
+
+nav h1 {
     line-height: 80px;
     font-size: 35px;
-    font-size: inline;
     color: purple;
 }
-nav ul
-{
+
+nav ul {
     float: left;
     line-height: 80px;
 }
-nav ul li
-{
+
+nav ul li {
     display: inline-block;
     list-style-type: none;
     padding: 0px 5px;
 }
-nav ul li a
-{
+
+nav ul li a {
     color: royalblue;
     text-decoration: dashed;
     text-transform: capitalize;
     border-radius: 5px;
     padding: 7px 8px;
 }
-nav ul li a:hover
-{
+
+nav ul li a:hover {
     background-color: rgb(135, 13, 159);
     transition: 0.5s ease;
 }
-nav ul li .active 
-{
-    /* color the buttons 
-    background-color: rgb(135, 13, 159);*/
-}
+
 .article
 {
     width: 50%;
     margin: auto;
     text-align: center;
     transform: translateY(10vh);
-    margin-bottom: 50px;
 }
-.article2
-{
+
+
+ .article2, .skills, .education, .project {
     width: 50%;
-    margin: auto;
-    text-align: left;
+    text-align: center;
     transform: translateY(10vh);
-    margin-top: 500px;   
+    margin-top: 50px;
+}
+.skills
+{
+    justify-content: space-between;
+    display: flex;
 }
 .article h1
 {
     font: size 40px;
     color: white;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 250px;
+    color: aliceblue;
+    transform: translate(10vh);
+}
+
+ .article2 h1, .skills h1, .experience h1, .education h1, .project h1 {
+    font-size: 40px;
+    color: white;
     letter-spacing: 1px;
     font-weight: 800;
     margin-bottom: 25px;
-}
-.article2 h1
-{
-    font: size 40px;
-    color: aliceblue;
-    text-align: left;
-    transform: translate(30vh);
-    font-weight: 800;
-    margin-top: 50px;
 
+    
 }
-.article p
-{
+
+.article2 h1, .skills h1, .experience h1, .education h1, .project h1 {
+    color: aliceblue;
+    transform: translate(30vh);
+}
+
+.article p {
     font-size: 18px;
     color: white;
-    line: height 1.5;
+    line-height: 1.5;
     margin-bottom: 50px;
 }
-.article2 p
+.article2
 {
+    width: 80%;
+    margin: auto; 
+    text-align: justify;
+}
+.article2 p {
     font-size: 20px;
     color: white;
-    line: height 1.5;
+    width: 100%;
+    line-height: 1.5;
     margin-top: 110px;
     transform: translate(5vh);
 }
-    img 
+.education p 
 {
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.education li
+{
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;   
+}
+
+img {
     width: 250px;
     border-radius: 50px;
     float: left;
     margin-top: 100px;
     margin-right: 10px;
     object-fit: cover;
-  }
+}
+.skills, .skills2
+{
+    margin-top: 20px;
+    width: 100%;
+}
+.skills ul, .skills2 ul
+{
+        list-style-type: circle; 
+        color: White; 
+        font-size: 26px; 
+}
+.skills li, .skills2 li {
+    text-align: left; 
+    margin-top:  55px;
+    display: inline-block;
+    margin-left: 5px; 
+    width: calc(100% - 40px);
+}
+
+.experience {
+    text-align: left;
+    color: white;
+}
+
+.experience h1
+{
+    margin-top:150px;
+}
+.experience-entry {
+    margin-top: 20px; 
+}
+
+.experience-header {
+    display: flex;
+    align-items: baseline; 
+    margin-bottom: 10px; 
+}
+
+.experience-dates {
+    font-weight: bold; 
+}
+
+
+.experience-details {
+    list-style-type: circle; 
+    padding-left: 20px; 
+}
+
+.experience-details li {
+    margin-bottom: 10px;
+}
+
